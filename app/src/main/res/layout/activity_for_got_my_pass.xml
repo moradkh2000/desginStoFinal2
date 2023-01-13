@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ccc"
+    android:layout_height="match_parent"
+    tools:context="ForGotMyPass">
+
+
+
+
+    <LinearLayout
+
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="Restore Password"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:singleLine="true"
+            android:text="Please enter your registerd email:"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/eTForGot1"
+
+
+
+            style="?android:buttonStyle"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bgedittext"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:hint="Enter your E-mail"
+            android:inputType="textEmailAddress"
+            android:outlineProvider="none"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:singleLine="true"
+
+
+            android:textColor="#fff"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/btn1"
+            style="@style/CardView.Dark"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+
+            android:background="#5DADE2"
+            android:text="Reset Password"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="0.5" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

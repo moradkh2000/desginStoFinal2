@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".StudentLogIN">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <TextView
+            android:id="@+id/tVtitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Login For Student"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <EditText
+            android:id="@+id/eTname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="name"
+            android:nextFocusDown="@id/eTemail"
+            android:inputType="textPersonName"
+            android:visibility="invisible" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <EditText
+            android:id="@+id/eTemail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="e-mail"
+            android:nextFocusDown="@id/eTpass"
+            android:inputType="textEmailAddress" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <EditText
+            android:id="@+id/eTpass"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="password"
+            android:nextFocusDown="@id/eTphone"
+            android:inputType="textPassword" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <EditText
+            android:id="@+id/eTphone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter your Phone"
+            android:inputType="phone"
+            android:digits="0123456789"
+            android:maxLength="10"
+            android:nextFocusDown="@id/eTid"
+            android:visibility="invisible" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <EditText
+            android:id="@+id/eTid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxLength="9"
+            android:hint="Enter your id"
+            android:inputType="phone"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/LL"
+            android:layoutDirection="ltr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+
+
+
+        </LinearLayout>
+
+        <CheckBox
+
+            android:textAlignment="textStart"
+            android:layoutDirection="ltr"
+            android:id="@+id/cBstayconnect"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Stay Connected"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <TextView
+
+            android:id="@+id/tVregister"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn"
+                style="@style/CardView.Dark"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#5DADE2"
+
+                android:text="Login"
+                android:textSize="14dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnFG"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#5DADE2"
+                style="@style/CardView.Dark"
+                android:text="new password"
+
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
